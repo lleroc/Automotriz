@@ -33,8 +33,8 @@ def un_producto():
 
 def eliminar_producto():
     mostrar_todos_productos()
-    nombre = input("Ingrese el nombre del producto que desea actualizar: ")
-    for producto in productos.items():
+    nombre = input("Ingrese el nombre del producto que desea eliminar: ")
+    for producto in list(productos.items()):
         if producto[1]["nombre"] == nombre:
             del productos[producto[0]]
 
